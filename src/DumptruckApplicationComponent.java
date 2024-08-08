@@ -2,8 +2,8 @@ import com.intellij.ide.ui.LafManager;
 
 import javax.swing.*;
 
-public class NyanApplicationComponent implements LafManagerListener, ApplicationActivationListener {
-    public NyanApplicationComponent() {
+public class DumptruckApplicationComponent implements LafManagerListener, ApplicationActivationListener {
+    public DumptruckApplicationComponent() {
     }
 
     @Override
@@ -17,7 +17,7 @@ public class NyanApplicationComponent implements LafManagerListener, Application
         updateProgressBarUi();
     }
     private void updateProgressBarUi() {
-        UIManager.put("ProgressBarUI", NyanProgressBarUi.class.getName());
-        UIManager.getDefaults().put(NyanProgressBarUi.class.getName(), NyanProgressBarUi.class);
+        UIManager.put("ProgressBarUI", DumptruckProgressBarUi.class.getName());
+        UIManager.getDefaults().put(DumptruckProgressBarUi.class.getName(), DumptruckProgressBarUi.class);
     }
 }
